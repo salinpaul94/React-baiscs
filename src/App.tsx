@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 
-import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
+// import ParentComponent from './components/ParentComponent';
 // import EventBind from './components/EventBind';
 // import ClassClick from './components/ClassClick';
 // import FunctionClick from './components/FunctionClick';
@@ -12,7 +13,8 @@ import ParentComponent from './components/ParentComponent';
 function App() {
   return (
     <div className="App">
-      <ParentComponent/>
+      <UserGreeting/>
+      {/* <ParentComponent/> */}
       {/* <EventBind /> */}
       {/* <ClassClick/> */}
       {/* <FunctionClick/> */}
