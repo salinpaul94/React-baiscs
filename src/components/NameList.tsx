@@ -19,15 +19,15 @@ function NameList() {
             skill: 'JS'
         },
         {
-            id: 2,
+            id: 3,
             name: 'Diana',
             age: 40,
             skill: 'HTML5'
         }
     ]
-    const nameList = names.map(name => <h2>{name}</h2>)
+    const nameList = names.map(name => <h2 key={name}>{name}</h2>)
     const personList = persons.map(person => (
-        <Person person={person}/>
+        <Person key={person.id} person={person}/>
     ))
 
     return (
