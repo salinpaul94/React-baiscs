@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 
-import NameList from './components/NameList';
+import NameList1 from './components/NameList1';
+// import NameList from './components/NameList';
 // import UserGreeting from './components/UserGreeting';
 // import ParentComponent from './components/ParentComponent';
 // import EventBind from './components/EventBind';
@@ -14,7 +15,8 @@ import NameList from './components/NameList';
 function App() {
   return (
     <div className="App">
-      <NameList/>
+      <NameList1/>
+      {/* <NameList/> */}
       {/* <UserGreeting/> */}
       {/* <ParentComponent/> */}
       {/* <EventBind /> */}
