@@ -2,11 +2,13 @@ import React, { Component } from 'react'
 
 class Form extends Component<any, any> {
 
-  constructor({props}: any) {
+  constructor({ props }: any) {
     super(props)
-  
+
     this.state = {
-       username: ''
+      username: '',
+      comments: '',
+      topic: 'react'
     }
   }
 
@@ -15,14 +17,50 @@ class Form extends Component<any, any> {
       username: event.target.value
     })
   }
+
+  commentsHandleChange = (event: { target: { value: any } }) => {
+    this.setState({
+      comments: event.target.value
+    })
+  }
+
+  handleTopicChange = (event: { target: { value: any } }) => {
+    this.setState({
+      topic: event.target.value
+    })
+  }
+
+  handleSubmit: React.FormEventHandler<HTMLFormElement> = (e: React.FormEvent<HTMLFormElement>) => {
+    alert(`Hi ${this.state.username} your comment on ${this.state.topic} is ${this.state.comments}`)
+    e.preventDefault()
+  }
   render() {
+    const { username, comments, topic } = this.state;
     return (
-      <div>
-        <label>Username </label>
-        <input type="text" value={this.state.username} onChange={this.handleUserNameChange} />
-      </div>
+      <form onSubmit={this.handleSubmit}>
+        <div>
+          <label>Username </label>
+          <input type="text" value={username} onChange={this.handleUserNameChange} />
+        </div>
+        <br />
+        <div>
+          <label>Comments </label>
+          <textarea value={comments} onChange={this.commentsHandleChange}></textarea>
+        </div>
+        <br />
+        <div>
+          <label>Topic</label>
+          <select value={topic} onChange={this.handleTopicChange}>
+            <option value="react">React</option>
+            <option value="angular">Angular</option>
+            <option value="vue">Vue</option>
+          </select>
+        </div>
+        <br />
+        <button>Submit</button>
+      </form>
     )
   }
 }
-
+ 
 export default Form
