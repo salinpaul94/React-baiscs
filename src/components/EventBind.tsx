@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 // export class EventBind extends Component {
-//     constructor(props) {
+//     constructor({props}: any) {
 //         super(props)
 
 //         this.state = {
@@ -42,9 +42,9 @@ import React, { Component } from 'react'
 //         return (
 //             <div>
 //                 <div>{this.state.message}</div>
-                    // binding in render
+//                     binding in render
 //                 {/* <button onClick={this.clickHandler.bind(this)}>Click</button> */}
-                    // arrow function in render
+//                     arrow function in render
 //                 {/* <button onClick={() => this.clickHandler()}>Click</button> */}
 //                 {/*binding in constructor */}
 //                 {/* Arrow function as a class property */}

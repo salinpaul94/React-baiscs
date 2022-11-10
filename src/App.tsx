@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
 import './App.css';
 
-import NameList1 from './components/NameList1';
+import StyleSheets from './components/StyleSheets';
+import Inline from './components/Inline';
+import './appStyles.css';
+import styles from './appStyles.module.css';
+// import NameList1 from './components/NameList1';
 // import NameList from './components/NameList';
 // import UserGreeting from './components/UserGreeting';
 // import ParentComponent from './components/ParentComponent';
@@ -15,7 +19,11 @@ import NameList1 from './components/NameList1';
 function App() {
   return (
     <div className="App">
-      <NameList1/>
+      <h1 className='error'>Error</h1>
+      <h1 className={styles.sucess}>Sucess</h1>
+      <Inline/>
+      <StyleSheets primary={false}/>
+      {/* <NameList1/> */}
       {/* <NameList/> */}
       {/* <UserGreeting/> */}
       {/* <ParentComponent/> */}
