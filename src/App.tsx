@@ -1,12 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
 
-import LifecycleA from './components/LifecycleA';
+// import Tables from './components/Tables';
+// import FragementsDemo from './components/FragementsDemo';
+// import LifecycleA from './components/LifecycleA';
 // import Form from './components/Form';
 function App() {
   return (
     <div className="App">
-      <LifecycleA/>
+      {/* <Tables/> */}
+      {/* <FragementsDemo/> */}
+      {/* <LifecycleA/> */}
       {/* <Form/> */}
       <br />
       <br />
