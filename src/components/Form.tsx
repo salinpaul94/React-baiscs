@@ -12,26 +12,33 @@ class Form extends Component<any, any> {
     }
   }
 
-  handleUserNameChange = (event: { target: { value: any } }) => {
+
+
+  handleUserNameChange = (event: { target: { value: string } }) => {
     this.setState({
       username: event.target.value
     })
   }
 
-  commentsHandleChange = (event: { target: { value: any } }) => {
+  commentsHandleChange = (event: { target: { value: string } }) => {
     this.setState({
       comments: event.target.value
     })
   }
 
-  handleTopicChange = (event: { target: { value: any } }) => {
+  handleTopicChange = (event: { target: { value: string } }) => {
     this.setState({
       topic: event.target.value
     })
   }
 
   handleSubmit: React.FormEventHandler<HTMLFormElement> = (e: React.FormEvent<HTMLFormElement>) => {
-    alert(`Hi ${this.state.username} your comment on ${this.state.topic} is ${this.state.comments}`)
+    if(this.state.username.length > 3){
+      alert(`Hi ${this.state.username} your comment on ${this.state.topic} is ${this.state.comments}`)
+    } else {
+      alert('username should be greater than 3 string')
+    }
+    // alert(`Hi ${this.state.username} your comment on ${this.state.topic} is ${this.state.comments}`)
     e.preventDefault()
   }
   render() {
