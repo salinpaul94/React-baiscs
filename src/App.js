@@ -1,7 +1,9 @@
 import './App.css';
 
-import ComponentC from './components/ComponentC';
-import { UserProvider } from './components/UserContext';
+import PostForm from './components/PostForm';
+// import PostList from './components/PostList';
+// import ComponentC from './components/ComponentC';
+// import { UserProvider } from './components/UserContext';
 // import ClickCounterTwo from './components/ClickCounterTwo';
 // import Counter from './components/Counter';
 // import HoverConterTwo from './components/HoverConterTwo';
@@ -10,9 +12,13 @@ function App() {
   return (
     <div className="App">
       <br />
-      <UserProvider value="Salinpaul">
+
+    <PostForm/>
+    {/* <PostList/> */}
+
+      {/* <UserProvider value="Salinpaul">
         <ComponentC/>
-      </UserProvider>
+      </UserProvider> */}
       
       {/* <Counter render={ (count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>
