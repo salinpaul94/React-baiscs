@@ -2,6 +2,7 @@ import './App.css';
 
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverConterTwo from './components/HoverConterTwo';
+import User from './components/User';
 // import ClickCounter from './components/ClickCounter';
 // import HoverCounter from './components/HoverCounter';
 // import Hero from './Hero';
@@ -22,6 +23,7 @@ function App() {
 
       <ClickCounterTwo/>
       <HoverConterTwo/>
+      <User render={(isLoggedIn) => isLoggedIn ? 'Salinpaul' : 'Guset'}/>
       {/* <ClickCounter name={'Salinpaul'}/> */}
       {/* <HoverCounter name={'Valooran'}/> */}
       {/* <ErrorBoundary>
