@@ -1,6 +1,8 @@
 import './App.css';
 
-import PortalDemo from './components/PortalDemo';
+import Hero from './Hero';
+import ErrorBoundary from './components/ErrorBoundary';
+// import PortalDemo from './components/PortalDemo';
 // import FRParentInput from './components/FRParentInput';
 // import FocusInput from './components/FocusInput'; 
 // import RefsDemo from './components/RefsDemo';
@@ -13,8 +15,19 @@ function App() {
   return (
     <div className="App">
       <br />
-
-      <PortalDemo/>
+      
+      <ErrorBoundary>
+        <Hero heroName={"Batman"}/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName={"Superman"}/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName={"Joker"}/>
+      </ErrorBoundary>
+      
+      
+      {/* <PortalDemo/> */}
       {/* <FRParentInput/> */}
         {/* <FocusInput/> */}
         {/* <RefsDemo/> */}
