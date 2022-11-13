@@ -1,7 +1,9 @@
 import './App.css';
 
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverConterTwo from './components/HoverConterTwo';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
 // import Hero from './Hero';
 // import ErrorBoundary from './components/ErrorBoundary';
 // import PortalDemo from './components/PortalDemo';
@@ -17,8 +19,11 @@ function App() {
   return (
     <div className="App">
       <br />
-      <ClickCounter name={'Salinpaul'}/>
-      <HoverCounter name={'Valooran'}/>
+
+      <ClickCounterTwo/>
+      <HoverConterTwo/>
+      {/* <ClickCounter name={'Salinpaul'}/> */}
+      {/* <HoverCounter name={'Valooran'}/> */}
       {/* <ErrorBoundary>
         <Hero heroName={"Batman"}/>
       </ErrorBoundary>
