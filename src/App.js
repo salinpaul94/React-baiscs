@@ -1,15 +1,20 @@
 import './App.css';
-import FragmentDemo from './components/FragmentDemo';
-import FragmentDemo2 from './components/FragmentDemo2';
-import Table from './components/Table';
+
+import ParentComp from './components/ParentComp';
+// import PureComp from './components/PureComp';
+// import FragmentDemo from './components/FragmentDemo';
+// import FragmentDemo2 from './components/FragmentDemo2';
+// import Table from './components/Table';
 function App() {
   return (
     <div className="App">
       <br/>
 
-      <Table/>
+      <ParentComp/>
+      {/* <PureComp/> */}
+      {/* <Table/>
       <FragmentDemo2/>
-      <FragmentDemo/>
+      <FragmentDemo/> */}
       <br/><br/>
       <div>
         Testing
