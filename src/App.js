@@ -1,7 +1,7 @@
 import './App.css';
 
-
-import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+// import ParentComp from './components/ParentComp';
 // import PureComp from './components/PureComp';
 // import FragmentDemo from './components/FragmentDemo';
 // import FragmentDemo2 from './components/FragmentDemo2';
@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <br/>
 
-
-      <ParentComp/>
+      <RefsDemo/>
+      {/* <ParentComp/> */}
       {/* <PureComp/> */}
       {/* <Table/>
       <FragmentDemo2/>
