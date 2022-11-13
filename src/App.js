@@ -1,5 +1,6 @@
 import './App.css';
 
+
 import ParentComp from './components/ParentComp';
 // import PureComp from './components/PureComp';
 // import FragmentDemo from './components/FragmentDemo';
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <br/>
+
 
       <ParentComp/>
       {/* <PureComp/> */}
