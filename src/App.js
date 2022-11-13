@@ -17,8 +17,8 @@ function App() {
   return (
     <div className="App">
       <br />
-      <ClickCounter/>
-      <HoverCounter/>
+      <ClickCounter name={'Salinpaul'}/>
+      <HoverCounter name={'Valooran'}/>
       {/* <ErrorBoundary>
         <Hero heroName={"Batman"}/>
       </ErrorBoundary>
